@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9DF5C0AB533D29B46ED5129FAC36B4853D319E99+++BD17605",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EBFEAC18B4DEC8BAA2EC3EF1D13C82AD44F250B8+++8753D32" : 0,
+    "9DF5C0AB533D29B46ED5129FAC36B4853D319E99+++BD17605" : 0,
+    "EBFEAC18B4DEC8BAA2EC3EF1D13C82AD44F250B8+++7116171" : 0,
+    "EBFEAC18B4DEC8BAA2EC3EF1D13C82AD44F250B8+++69DD695" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F7D7BB4C-574B-4ABD-A000-A07383829A92",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EBFEAC18B4DEC8BAA2EC3EF1D13C82AD44F250B8+++8753D32" : "BluetoothDemo_Github\/",
+    "9DF5C0AB533D29B46ED5129FAC36B4853D319E99+++BD17605" : "BluetoothDemo_Bitbucket\/",
+    "EBFEAC18B4DEC8BAA2EC3EF1D13C82AD44F250B8+++7116171" : "",
+    "EBFEAC18B4DEC8BAA2EC3EF1D13C82AD44F250B8+++69DD695" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BluetoothDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BluetoothDemo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/nhdung_misfit\/bluetoothdemo",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9DF5C0AB533D29B46ED5129FAC36B4853D319E99+++BD17605"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nhdungmisfit\/BluetoothDemo",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EBFEAC18B4DEC8BAA2EC3EF1D13C82AD44F250B8+++69DD695"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nhdungmisfit\/BluetoothDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EBFEAC18B4DEC8BAA2EC3EF1D13C82AD44F250B8+++7116171"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nhdungmisfit\/BluetoothDemo",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EBFEAC18B4DEC8BAA2EC3EF1D13C82AD44F250B8+++8753D32"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TIV-7c-ymW">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BluetoothDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G9r-Mb-GZO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCellReuseIdentifier" id="wJT-wC-7ZP" customClass="ItemTableViewCell" customModule="BluetoothDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wJT-wC-7ZP" id="vlN-xa-4VD">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITI-xt-F2V" userLabel="Bluetooth name label">
+                                                    <rect key="frame" x="15" y="14" width="121" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RSSI" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyE-28-5r9" userLabel="RSSI label">
+                                                    <rect key="frame" x="527" y="14" width="36" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="36" id="N5N-Ab-YzF"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ryo-RD-aQI" userLabel="Status Icon">
+                                                    <rect key="frame" x="575" y="17.5" width="15" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="15" id="oNt-bq-J7W"/>
+                                                        <constraint firstAttribute="height" constant="15" id="zz1-g2-Beo"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="gyE-28-5r9" secondAttribute="trailing" constant="50" id="CYj-wm-Pcq"/>
+                                                <constraint firstItem="Ryo-RD-aQI" firstAttribute="centerY" secondItem="vlN-xa-4VD" secondAttribute="centerY" id="cB9-MY-EG8"/>
+                                                <constraint firstItem="Ryo-RD-aQI" firstAttribute="leading" secondItem="gyE-28-5r9" secondAttribute="trailing" constant="12" id="hkK-MN-EMu"/>
+                                                <constraint firstItem="ITI-xt-F2V" firstAttribute="centerY" secondItem="vlN-xa-4VD" secondAttribute="centerY" id="jL4-46-SnI"/>
+                                                <constraint firstItem="gyE-28-5r9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ITI-xt-F2V" secondAttribute="trailing" constant="20" id="kcT-rT-LZC"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ryo-RD-aQI" secondAttribute="trailing" constant="10" id="nsT-3F-zuc"/>
+                                                <constraint firstItem="gyE-28-5r9" firstAttribute="centerY" secondItem="vlN-xa-4VD" secondAttribute="centerY" id="yJd-cS-iXt"/>
+                                                <constraint firstItem="ITI-xt-F2V" firstAttribute="leading" secondItem="vlN-xa-4VD" secondAttribute="leading" constant="15" id="yuf-8O-sDJ"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="CYj-wm-Pcq"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="ITI-xt-F2V" id="sXY-Yg-Mjb"/>
+                                            <outlet property="rssiLabel" destination="gyE-28-5r9" id="5V2-hU-FVB"/>
+                                            <outlet property="statusImgView" destination="Ryo-RD-aQI" id="R16-eZ-ffT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="H13-3w-mxJ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="LdM-mw-rFl"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="G9r-Mb-GZO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7qo-PM-B6e"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="G9r-Mb-GZO" secondAttribute="bottom" id="TzP-8N-afR"/>
+                            <constraint firstItem="G9r-Mb-GZO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hvK-Si-7e8"/>
+                            <constraint firstAttribute="trailing" secondItem="G9r-Mb-GZO" secondAttribute="trailing" id="wS2-u0-4IE"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="Gud-xB-MpP">
+                        <barButtonItem key="rightBarButtonItem" title="Scan" id="cjf-JL-qhL">
+                            <connections>
+                                <action selector="scanBtnTouch:" destination="BYZ-38-t0r" id="VfD-IN-Avc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="G9r-Mb-GZO" id="6S7-jV-lu0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1111" y="-271"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fcW-He-SMl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TIV-7c-ymW" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GJN-CG-xWF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="b18-wb-3Oa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d5F-5A-Cws" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="-315"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="check.png" width="113" height="113"/>
+    </resources>
+</document>
